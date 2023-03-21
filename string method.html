@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+    <script>
+        var str="my name IS zahid nawaz";
+        var d=str.length;
+        document.write(d);
+        d
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.toLowerCase();
+        document.write(d);
+
+       
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.toUpperCase();
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.includes("IS");// use for searching
+        document.write(d);
+
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.startsWith("m");// use for searching
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.endsWith("for");// use for searching
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.search("IS");// use for search index
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.match(/IS/g);// use for searching and make array
+        document.write(d);
+
+      
+        document.write("<br>");;
+        var str="my name IS zahid nawaz";
+        var d=str.indexOf("IS");// use for searching index
+        document.write(d);
+
+      
+        document.write("<br>");
+        var str="my name IS zahid nawaz IS ";
+        var d=str.lastIndexOf("IS");// use for searching index in last
+        document.write(d);
+
+
+        
+        document.write("<br>");;
+        var str="my name IS zahid nawaz zahid";
+        var d=str.replace(/zahid/g,"kamran");// use for replacing word
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.trim();// use for removing space
+        alert(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.charAt(5);// find word in position
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.charCodeAt(4);// find skicode
+        document.write(d);
+
+        document.write("<br>");
+       // var str="my name IS zahid nawaz";
+        var d=String.fromCharCode(65);// write skicode find number
+        document.write(d);
+
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var a="zahid";
+        var b="zahid";
+        var d=str.concat(a,b);// collecting two string
+        document.write(d);
+
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.split("m");// split and remove word who use
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.repeat(5);// repeate tht string
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.slice(4,6);// taking word in the string 
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.substring(3,6);//  taking word in the string 
+        document.write(d);
+
+        
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.substr(3,6);//  taking word in the string 
+        document.write(d); 
+
+        document.write("<br>");
+        //var str="my name IS zahid nawaz";
+        var a=40;
+        var d=a.toString();//  converting datatype in string
+        document.write(d+23); 
+
+        document.write("<br>");
+        var str="my name IS zahid nawaz";
+        var d=str.valueOf();//  show value of string 
+        document.write(d); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
