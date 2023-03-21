@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number method</title>
+    <script>
+         var a="43";
+        var num=Number(a);// converting in number
+        document.write(num + 10);
+        document.write("<br>");
+
+        var a="43.5665";
+        var num=parseInt(a);// show non decimal number
+        document.write(num);
+        document.write("<br>");
+
+        var a="43.5665";
+        var num=parseFloat(a);// show  decimal number
+        document.write(num);
+        document.write("<br>");
+
+        var a="43.5665";
+        var num=Number.isInteger(a);// show integer value
+        document.write(num);
+        document.write("<br>");
+
+        var a=43.5665;
+        var num=Number.isFinite(a);// show  finite value
+        document.write(num);
+        document.write("<br>");
+
+        var a=43.5665;
+        var num= a.toFixed(3);// show  after decimal value
+        document.write(num);
+        document.write("<br>");
+
+        var a=43.5665;
+        var num= a.toPrecision(3);// show  
+        document.write(num);
+        document.write("<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
