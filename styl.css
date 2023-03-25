@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #348489;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.cal{
+    padding-top: 20px;
+}
+.calculator{
+    background: #033747;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin: 8px;
+    margin-bottom: 10px;
+}
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equel{
+    width: 130px;
+    color: limegreen;
+    font-size: 40PX;
+    font: bold;
+}
+form input.ZERO{
+    color: brown;
+    font-size: 40PX;
+    font: bold;
+}
+form input.DUBLZ{
+    color: blue;
+    font-size: 40PX;
+    font: bold;
+}
+form input.ADD{
+    color: goldenrod;
+    font-size: 40PX;
+    font: bold;
+}
+form input.SUB{
+    color: firebrick;
+    font-size: 40PX;
+    font: bold;
+}
+form input.MUL{
+    color: seagreen;
+    font-size: 40PX;
+    font: bold;
+}
+form input.DIV{
+    color: green;
+    font-size: 40PX;
+    font: bold;
+}
+form input.AC{
+    color: hotpink;
+    font-size: 35PX;
+    font: bold;
+}
+form input.DE{
+    color: fuchsia;
+    font-size: 35PX;
+    font: bold;
+}
+form input.NIN{
+    color: darkred;
+    font-size: 40PX;
+    font: bold;
+}
+form input.EIT{
+    color: darkgoldenrod;
+    font-size: 40PX;
+    font: bold;
+}
+form input.FOR{
+    color: yellow;
+    font-size: 40PX;
+    font: bold;
+}
+form input.THE{
+    color: slateblue;
+    font-size: 40PX;
+    font: bold;
+}
+form input.TWO{
+    color: sandybrown;
+    font-size: 40PX;
+    font: bold;
+}
+form input.FIV{
+    color: forestgreen;
+    font-size: 40PX;
+    font: bold;
+}
+form input.SIX{
+    color: goldenrod;
+    font-size: 40PX;
+    font: bold;
+}
+form input.SEV{
+    color: grey;
+    font-size: 40PX;
+    font: bold;
+}
+form input.ONE{
+    color: greenyellow;
+    font-size: 40PX;
+    font: bold;
+}
+form input.DIV{
+    color: goldenrod;
+    font-size: 40PX;
+    font: bold;
+}
+form input.DOT{
+    color: brown;
+    font-size: 40PX;
+    font: bold;
+}
+
