@@ -1,0 +1,20 @@
+*{
+    background-color: darkgreen;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#outer{
+    border: 10px solid red;
+    height: 300px;
+    padding-left: 20px;
+}
+#inner{
+    border: 10px solid red;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-top: 60px;
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: blue;
+}
