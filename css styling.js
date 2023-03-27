@@ -8,4 +8,4 @@ var element;
 //document.querySelector("#logo").classList.add("xyx","df");
 //element=document.querySelector("#logo").classList;   //use classlist method
 element=document.querySelector("#logo").classList.remove("ahg");
-document.log(element);
+document.log(element); 
