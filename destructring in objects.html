@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // use same variable name
+         /* const a={
+            name:"zahid",
+            age:20
+
+          };
+          var{name,age}=a;
+          console.log("name is:"+name);
+          console.log("age is:"+age);*/
+
+          // change variable name
+
+
+          /*const a={
+            name:"zahid",
+            age:20
+
+          };
+          var{name:x,age:y}=a;
+          console.log("name is:"+x);
+          console.log("age is:"+y)*/
+
+          // anothor key
+          const a={
+            name:"zahid",
+            age:20,
+            hobbi:"cricket",
+            song:"kasmir"
+
+          };
+          var {name,age,...another}=a;
+          console.log(another)
+    </script>
+</body>
+</html>
