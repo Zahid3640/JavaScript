@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: montserrat;
+
+}
+nav{
+    background-color: blue;
+    height: 80px;
+    width: 100%;
+
+}
+#logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight:     bold;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+    margin-right: 35px;
+}
+nav ul li{
+    display: inline-block;
+    height: 80px;
+    margin: 0 20px;
+    padding-top: 30px;
+}
+nav  ul li a{
+    color:white;
+    font-weight: 20px;
+    font-size: 20px;
+}
+a:hover{
+    background-color: green;
+}
+#h h1{
+   
+    background-color: brown;
+}
+ h1{
+    padding: 10px 10px 10px 10px;
+}
+.f{
+    background-color: aquamarine;
+    float: center;
+    width: 100%;
+}
+.xxx{
+    background-color: green;
+}
