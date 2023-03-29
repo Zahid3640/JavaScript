@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        const findindex=(arry,target)=>
+        {
+            for(let i=0;i<arry.length;i++)
+            {
+                if(arry[i]===target)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        var show=findindex([1,2,3,4],4);
+        console.log(show);
+    </script>
+</body>
+</html>
