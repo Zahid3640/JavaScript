@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     const a=[50,27,32,9,13];//sorting method stor data in string
+    //    // ["50","27","32","9","13"]  sort through ascii code
+    //        //[53,50,51,57,49]  first digits ascii code .sorting thats num
+
+    //     var z=a.sort();
+    //     console.log(z);
+    // const name=["ali","ALI","Zahid","zAHID","kam","KAM","kAm"];
+    //         var z=name.sort();
+    //         console.log(z);
+ 
+
+    // //         assending order
+    //           const a=[50,27,32,9,13];
+    //           var z=a.sort((a,b)=>a-b);
+    //              console.log(z);
+                 //a=50,b=27
+                 // a-b  agr jawab positive ay tu b ko a ki jga pr sort kr dyty h
+               // a-b    agr negative ay tu (a,b) ko change ni krty
+
+                // dessending order
+            //   const a=[50,27,32,9,13];
+            //   var z=a.sort((a,b)=>b-a);
+            //      console.log(z);
+
+                // low to high
+            // const product=[
+            //     { pid:1,pname:"mobile",price:2300 },
+            //     { pid:2,pname:"char",price:200 },
+            //     { pid:3,pname:"lap",price:300 },
+            //     { pid:4,pname:"tab",price:4500 }
+            // ];
+            // var z=product.slice(0).sort((a,b)=>a.price-b.price);
+            // console.log(z);
+
+
+             //high to low
+
+            const product=[
+                { pid:1,pname:"mobile",price:2300 },
+                { pid:2,pname:"char",price:200 },
+                { pid:3,pname:"lap",price:300 },
+                { pid:4,pname:"tab",price:4500 }
+            ];
+            var z=product.sort((a,b)=>b.price-a.price);
+            console.log(z);
+
+    </script>
+</body>
+</html>
