@@ -6,17 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>filter</title>
     <script>
-       var ary=[1,2,6,4,5,6,7,8,9];
-       document.write(ary+"<br><br>");
-       var d=ary.filter(checkadlult);
-        document.write(d+"<br><br>");
+    //    var ary=[1,2,6,4,5,6,7,8,9];
+    //    document.write(ary+"<br><br>");
+    //    var d=ary.filter(checkadlult);
+    //     document.write(d+"<br><br>");
        
         
 
-        function checkadlult(ary)
-        {
-            return ary>=3;
-        }
+    //     function checkadlult(ary)
+    //     {
+    //         return ary>=3;
+    //     }
+        // const name = ["shahid","zahid","kamran","ami","zoo"];
+        //  var n = name.filter(n=>n.startsWith("z"));
+        // console.log(n);
+        // const name = ["shahid","zahid","kamran","ami"];
+        // var n = name.filter(name=>name.endsWith("hahid"));
+        //  console.log(n);
+        // const name = ["shahid","zahid","kamran","ami"];
+        // var n = name.filter(name=>name[0]==="k");
+        //  console.log(n);
+
+        // const name = ["shahid","zahid","kamran","ami"];
+        // var n = name.filter(obj);
+        //  console.log(n);
+
+        //  function obj(name)
+        // {
+        //     return name.includes("a");
+        // }
+        
+
+        const name = ["shahid","zahid","kamran","ami","zoo"];
+         var n = name.filter(n=>n.length<4);
+         console.log(n)
+
+
+        
+
+
         
     </script>
 </head>
