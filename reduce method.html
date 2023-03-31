@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* var a=[1,2,3,4,5];
+        const total= a.reduce((sum,currentvalue)=>{
+            return sum +currentvalue;
+        },2)
+        console.log(total);*/
+
+        var a=[1,2,3,4,5,3];
+        const total= a.reduce((sum,currentvalue)=>{
+            return sum +currentvalue;
+        })
+        console.log(total);
+
+      //  sum    currentvalue    return
+      //  1           2          3
+      //  3           3          6
+      //  6           4          10
+      //  10          5          15
+      //  15          3          18
+
+
+
+      var user=[
+        {Productid:1,Pname:"MOBILE", price:12000},
+        {Productid:1,Pname:"laptop",price:20000},
+        {Productid:1,Pname:"tab",price:7000}
+      ];
+        const totalprice= user.reduce((sum,currentvalue)=>{
+            return sum +currentvalue.price;
+        },0)
+        console.log(totalprice);
+    </script>
+</body>
+</html>
