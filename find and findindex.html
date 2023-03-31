@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>find </title>
     <script>
-       var ary=[1,2,6,4,5,6,7,8,9];
-       document.write(ary+"<br><br>");
-       var d=ary.find(checkadlult);
-        document.write(d+"<br><br>");
+    //    var ary=[1,2,6,4,5,6,7,8,9];
+    //    document.write(ary+"<br><br>");
+    //    var d=ary.find(checkadlult);
+    //     document.write(d+"<br><br>");
        
-        var ary=[1,2,3,4,5,6,7,8,9]; 
-        document.write(ary+"<br><br>");
-       var c=ary.findIndex(checkadlult);// check each value
-        document.write(c+"<br><br>");
+    //     var ary=[1,2,3,4,5,6,7,8,9]; 
+    //     document.write(ary+"<br><br>");
+    //    var c=ary.findIndex(checkadlult);// check each value
+    //     document.write(c+"<br><br>");
 
-        function checkadlult(ary)
-        {
-            return ary>8;
-        }
+        // function checkadlult(ary)
+        // {
+        //     return ary>6;
+        // }
         
+
+        const product=[
+                { pid:1,pname:"mobile",price:2300 },
+                { pid:2,pname:"char",price:200 },
+                { pid:3,pname:"lap",price:300 },
+                { pid:4,pname:"tab",price:4500 }
+            ];
+            var z=product.find((a)=>a.pid===3);
+            console.log(z);
     </script>
 </head>
 <body>
