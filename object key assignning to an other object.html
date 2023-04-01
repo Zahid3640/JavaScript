@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //     const obj1={
+    //         key1:"value1",
+    //         key2:"value2",
+    //         key3:"value3"
+    //     }
+    //         // var obj2={}
+    //         // obj2.key4="value4";
+    //     // there are many ways to create empty object
+
+    //     //console.log(obj2.key1)
+    //     var obj2=Object.create(obj1); // return {} object
+    //     //obj2.key4="value4";
+    //     //agr  key2 obj2 m na mili tu wo usy obj1 m dhky ga
+    //     //__proto__        property h broswer m
+    //    // [[prototype]]        property h broswer m
+    //     console.log(obj2)
+
+
+        const method={
+        about:function(){
+        return `First name : ${this.fname} and last name :${this.lname}`},
+    
+         is18:function(){
+           return this.age<18;
+         }
+
+    }
+    function createuser(fname,lname,age,address){
+        const user={};
+        user.fname=fname;
+        user.lname=lname;
+        user.age=age;
+        user.address=address;
+        user.about=method.about;
+        user.is18=method.is18;
+        return user;
+    }
+    const user1=createuser('zahid','nawaz',3,'fdh');
+
+    // const user2=createuser('zahid','nawaz',3,'fdh');
+    // const user3=createuser('zahid','nawaz',3,'fdh');
+    // console.log(user1);
+    // var about=user1.about();
+    // console.log(about);
+      var about=user1.is18();
+    console.log(about);
+
+
+    </script>
+</body>
+</html>
