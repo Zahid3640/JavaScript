@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //step1
+    //     function createuser(fname,lname,age,address){
+    //         const user={};
+    //         user.fname=fname;
+    //         user.lname=lname;
+    //         user.age=age;
+    //         user.address=address;
+    //         user.about=function(){
+    //             return `First name : ${this.fname} and last name :${this.lname}`};
+    //        user.is18=function(){
+    //        return this.age<18;}
+    //        return user;
+    //     }
+    //     var user1=createuser("zahid","nawaz",6,"wyuyw");
+    //     console.log(user1);
+    //     // var user2=createuser("zahid","nawaz",12,"wyuyw");
+    //     // console.log(user2);
+    //     // var user3=createuser("zahid","nawaz",12,"wyuyw");
+    //    // console.log(user3);
+    //      const b=user1.about();
+    //      console.log(b);
+    //      var c=user1.is18();
+    //      console.log(c);
+
+          //step2
+
+
+    //       const method={
+    //     about:function(){
+    //     return `First name : ${this.fname} and last name :${this.lname}`},
+    
+    //      is18:function(){
+    //        return this.age<18;
+    //      }
+
+    // }
+    // function createuser(fname,lname,age,address){
+    //     const user={};
+    //     user.fname=fname;
+    //     user.lname=lname;
+    //     user.age=age;
+    //     user.address=address;
+    //     user.about=method.about;
+    //     user.is18=method.is18;
+    //     return user;
+    // }
+    // const user1=createuser('zahid','nawaz',3,'fdh');
+
+    // // const user2=createuser('zahid','nawaz',3,'fdh');
+    // // const user3=createuser('zahid','nawaz',3,'fdh');
+    // // console.log(user1);
+    // // var about=user1.about();
+    // // console.log(about);
+    //   var about=user1.is18();
+    // console.log(about);
+
+
+        // step3
+
+
+        const method={
+        about:function(){
+        return `First name : ${this.fname} and last name :${this.lname}`},
+    
+         is18:function(){
+           return this.age<18;
+         }
+
+    }
+    function createuser(fname,lname,age,address){
+        const user=Object.create(method);   //{} object empty creation
+        user.fname=fname;
+        user.lname=lname;
+        user.age=age;
+        user.address=address;
+        return user;
+    }
+    const user1=createuser('zahid','nawaz',3,'fdh');
+
+    // const user2=createuser('zahid','nawaz',3,'fdh');
+    // const user3=createuser('zahid','nawaz',3,'fdh');
+    // console.log(user1);
+     var about=user1.about();
+    console.log(about);
+      var about=user1.is18();
+    console.log(about);
+
+
+    </script>
+</body>
+</html>
