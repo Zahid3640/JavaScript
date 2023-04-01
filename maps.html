@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maps</title>
+</head>
+<body>
+    <script>
+        // object store string keys
+        //but maps amy types of keys
+        // maps is itrable
+        const a=new Map();
+        a.set('name','zahid');
+        a.set('age','34');
+        a.set('name','zahid');
+        a.set('name','zahid');
+        a.set([1,2,3],'zahid');
+        a.set({name:"ali"},'zahid');
+        //console.log(typeof a);
+       // console.log(a.keys())  print kerys
+       // console.log(a);
+      // console.log(a.get("name"));   use get method to acces keys
+    //   for(let c of a){
+    //     //console.log(c);
+    //   }
+    
+    // for(let c of a.keys()){
+    //     console.log(c);
+    //   // console.log(c,typeof c);  typeof
+    //   } 
+
+    //  for(let key  of a){
+    //    //console.log(key);
+    //    //console.log(Array.isArray(key));  //typeof
+    //    } 
+
+    // for(let[ key,value]  of a){
+    //    console.log(key,value);
+    //    } 
+
+    // const d= new Map([["name","zahid"],["age",12]]);
+    // console.log(d);
+
+    //object
+
+    const obj={id:1,
+        name:"zahid"}
+    const extrainfo=new Map();
+     extrainfo.set(obj,{age:12, gender:"male"});
+    // console.log(extrainfo);
+
+   // console.log(obj.id)
+//    console.log(extrainfo.get(obj))
+    console.log(extrainfo.get(obj).gender)
+
+     </script>
+</body>
+</html>
