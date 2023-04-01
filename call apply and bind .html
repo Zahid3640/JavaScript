@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //call function
+        //  const obj={
+        //      name:"zahid",
+        //     age:12,
+        //      about:function(){
+        //         console.log(this.name,this.age)
+        //      }
+        //  }
+        //     obj.about();
+
+
+
+        // const obj={
+        //      name:"zahid",
+        //     age:12,
+        //      about:function(f,d){
+        //         console.log(this.name,this.age,f,d)
+        //      }
+        //  }
+        //  const obj1={
+        //      name:"amir",
+        //     age:23,
+        //  }
+        //     obj.about.call(obj1,"ali","ds ");
+
+
+        // function about(f,d){
+        //         console.log(this.name,this.age,f,d)
+        // }
+        // const obj={
+        //      name:"zahid",
+        //     age:12,
+        //      }
+        
+        //  const obj1={
+        //      name:"amir",
+        //     age:23,
+        //  }
+        //     about.call(obj,"ali","ds ");
+
+
+
+         // Apply use lisr of extra patameter baqi same h call or apply
+        //  function about(f,d){
+        //          console.log(this.name,this.age,f,d)
+        //  }
+        //  const obj={
+        //       name:"zahid",
+        //      age:12,
+        //       }
+        
+        //  const obj1={
+        //      name:"amir",
+        //     age:23,
+        //  }
+        //     about.apply(obj,["ali","dsn "]);
+
+            //bind    return function we call the function when we use
+            function about(f,d){
+                 console.log(this.name,this.age,f,d)
+         }
+         const obj={
+              name:"zahid",
+             age:12,
+              }
+        
+         const obj1={
+             name:"amir",
+            age:23,
+         }
+           var fun= about.bind(obj,"ali","sn ");
+           fun();
+
+
+    </script>
+</body>
+</html>
