@@ -68,7 +68,8 @@
 
             //bind    return function we call the function when we use
             function about(f,d){
-                 console.log(this.name,this.age,f,d)
+                 console.log(this)
+                 //console.log(this.name,this.age,f,d)
          }
          const obj={
               name:"zahid",
@@ -79,8 +80,10 @@
              name:"amir",
             age:23,
          }
-           var fun= about.bind(obj,"ali","sn ");
-           fun();
+    
+
+            var fun= about.bind(obj,"ali","sn ");
+          fun();
 
 
     </script>
