@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // method
+        // function inside the object
+        // const obj={
+        //     name:"zahid",
+        //     age:12,
+        //     about:function(){
+        //         console.log(`name is that:${this.name}and age is that:${this.age}`)
+        //     }
+        // }
+        //     obj.about();
+
+        // const obj={
+        //     name:"zahid",
+        //     age:12,
+        //     about:function(){
+        //         console.log(this)
+        //     }
+        // }
+        //     obj.about();
+
+        // const obj={
+        //     name:"zahid",
+        //     age:12,
+        //     about:function(){
+        //         console.log(this.name,this.age);
+        //     }
+        // }
+        //     obj.about();
+
+
+        function info(){
+            console.log(`name is that:${this.name}  and age is that:${this.age}`)
+        }
+        const obj={
+            name:"zahid",
+            age:12,
+           about:info
+        }
+        const obj1={
+            name:"amir",
+            age:14,
+           about:info
+        }
+        const obj2={
+            name:"ali",
+            age:17,
+           about:info
+        }
+        obj.about();
+        obj1.about();
+        obj2.about();
+        
+    </script>
+</body>
+</html>
