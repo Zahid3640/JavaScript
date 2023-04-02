@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function createuser(fname,lname){
+        //     this.fname=fname;
+        //     this.lname=lname;
+        // }
+        // createuser.prototype.about=function(){
+        // return `First name : ${this.fname} and last name :${this.lname}`};
+        // var user1=new createuser("zahid","nawaz");
+        // var user2=new createuser("sahid","nawaz");
+        // console.log(user2);
+        // console.log(user2.about())
+
+
+    //     function createuser(fname,lname,age,address){
+    //     this.fname=fname;
+    //     this.lname=lname;
+    //     this.age=age;
+    //     this.address=address;
+    // }
+    //   createuser.prototype.about=function(){
+    //     return `First name : ${this.fname} and last name :${this.lname}`};
+    // createuser.prototype.is18=function(){
+    //        return this.age<18;
+    //      }
+
+    // const user1= new createuser('zahid','nawaz',3,'fdh');
+
+    //  const user2= new createuser('shahid','nawaz',3,'fdh');
+    // // const user3=createuser('zahid','nawaz',3,'fdh');
+    //  //console.log(user1);
+    // console.log(user1.is18());
+    //  console.log(user2.about());
+
+
+    function createuser(fname,lname,age,address){
+        this.fname=fname;
+        this.lname=lname;
+        this.age=age;
+        this.address=address;
+        return this;
+    }
+      createuser.prototype.about=function(){
+        return `First name : ${this.fname} and last name :${this.lname}`};
+    createuser.prototype.is18=function(){
+           return this.age<18;
+         }
+
+    const user1= new createuser('zahid','nawaz',3,'fdh');
+
+     const user2= new createuser('shahid','nawaz',3,'fdh');
+    // const user3=createuser('zahid','nawaz',3,'fdh');
+     //console.log(user1);
+    // console.log(user1.is18());
+    //  console.log(user2.about());
+
+    for(let key in user1){
+       // console.log(key);// print all user1 key also display prototype function
+         if(user1.hasOwnProperty(key)){ // has own property display his own property
+            console.log(key);
+         }
+    }
+    </script>
+</body>
+</html>
