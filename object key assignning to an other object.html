@@ -27,34 +27,6 @@
     //     console.log(obj2)
 
 
-        const method={
-        about:function(){
-        return `First name : ${this.fname} and last name :${this.lname}`},
-    
-         is18:function(){
-           return this.age<18;
-         }
-
-    }
-    function createuser(fname,lname,age,address){
-        const user={};
-        user.fname=fname;
-        user.lname=lname;
-        user.age=age;
-        user.address=address;
-        user.about=method.about;
-        user.is18=method.is18;
-        return user;
-    }
-    const user1=createuser('zahid','nawaz',3,'fdh');
-
-    // const user2=createuser('zahid','nawaz',3,'fdh');
-    // const user3=createuser('zahid','nawaz',3,'fdh');
-    // console.log(user1);
-    // var about=user1.about();
-    // console.log(about);
-      var about=user1.is18();
-    console.log(about);
 
 
     </script>
