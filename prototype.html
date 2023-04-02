@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // prototype is free space in function   only in function
+        // function =function +object
+         function hello(){
+             console.log("this is function")
+         }
+
+       // const hello={};
+
+      // const hello=[];
+      //  console.log(hello.name)   //return the name of function
+    //   if(hello.prototype){
+    //     console.log("prototype is prsent");
+    //   }
+    //   else{
+    //     console.log("prototype is not prsent");
+    //   }
+
+    hello.prototype.ac="sdf"
+    hello.prototype.abc="sdf";
+    hello.prototype.ab=function(){
+        console.log("dfghjklnm")
+    }
+    console.log(hello.prototype)
+    </script>
+</body>
+</html>
