@@ -25,12 +25,36 @@
     //     console.log("prototype is not prsent");
     //   }
 
-    hello.prototype.ac="sdf"
-    hello.prototype.abc="sdf";
-    hello.prototype.ab=function(){
-        console.log("dfghjklnm")
+    // hello.prototype.ac="sdf"
+    // hello.prototype.abc="sdf";
+    // hello.prototype.ab=function(){
+    //     console.log("dfghjklnm")
+    // }
+    // console.log(hello.prototype)
+
+
+
+    function createuser(fname,lname,age,address){
+        const user=Object.create(createuser.prototype);   //{} object empty creation
+        user.fname=fname;
+        user.lname=lname;
+        user.age=age;
+        user.address=address;
+        return user;
     }
-    console.log(hello.prototype)
+      createuser.prototype.about=function(){
+        return `First name : ${this.fname} and last name :${this.lname}`};
+    createuser.prototype.is18=function(){
+           return this.age<18;
+         }
+
+    const user1=createuser('zahid','nawaz',3,'fdh');
+
+     const user2=createuser('shahid','nawaz',3,'fdh');
+    // const user3=createuser('zahid','nawaz',3,'fdh');
+     //console.log(user1);
+    console.log(user1.is18());
+     console.log(user2.about());
     </script>
 </body>
 </html>
