@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // static access on person class
+        class person{
+            constructor(fname,lname){
+                this.fname=fname;
+                this.lname=lname;
+            }
+           // fullname(){
+            get fullname(){
+                return `${this.fname} ${this.lname} `
+            }
+            // setname(fname,lname){
+            //     this.fname=fname;
+            //     this.lname=lname;  
+            // }
+            set fullname(fullname){
+                const[fname,lname]=fullname.split(" ");
+                this.fname=fname;
+               this.lname=lname; 
+            }
+            static abc(){
+                console.log("static function")
+            }
+            static abc="my name is zahid nawaz"
+        }
+        //const person1=new person("zahid","nawaz")
+        //console.log(person1.fullname())
+       // console.log(person1.fullname)
+    //    console.log(person1.fname);
+    //    console.log(person1.lname);
+
+
+
+    //    person1.setname("ali","shahid");
+    //    console.log(person1.fname);
+    //    console.log(person1.lname);
+
+//     person1.fullname="ali shahid";
+//     //console.log(person1);
+//     console.log(person1.fname);
+//    console.log(person1.lname);
+//     person.abc();
+        console.log(person.abc)
+    </script>
+</body>
+</html>
