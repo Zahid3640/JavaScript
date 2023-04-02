@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class createuser{
+        constructor(fname,lname,age,address){
+            console.log("constructor call")
+        this.fname=fname;
+        this.lname=lname;
+        this.age=age;
+        this.address=address;
+        }
+        about(){
+        return `First name : ${this.fname} and last name :${this.lname}`}
+        is18(){
+            return this.age<18;
+        }
+        fun(a){
+            console.log(a)
+        }
+    }
+
+    const user1= new createuser('zahid','nawaz',3,'fdh');
+    const user2= new createuser('shahid','nawaz',3,'fdh');
+    const user3= new createuser('shahid','nawaz',3,'fdh');
+    const user4= new createuser('shahid','nawaz',3,'fdh');
+
+    // console.log(user1.fname);
+    // console.log(user1.about());
+    // console.log(user1.is18());
+
+    //console.log(Object.getProtypeOf(user1));
+   // user1.fun("ali");
+
+    </script>
+</body>
+</html>
