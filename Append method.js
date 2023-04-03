@@ -17,10 +17,10 @@
 
 // insert adjacent
 
-var newtag=document.createElement("p");
- var createtextnode=document.createTextNode("this is new heading");
- newtag.appendChild(createtextnode);
- var target=document.getElementById("test");
+// var newtag=document.createElement("p");
+//  var createtextnode=document.createTextNode("this is new heading");
+//  newtag.appendChild(createtextnode);
+//  var target=document.getElementById("test");
 //  target.insertAdjacentElement("beforebegin",newtag);
 //target.insertAdjacentElement("afterbegin",newtag);
 //target.insertAdjacentElement("beforeend",newtag);
@@ -28,11 +28,11 @@ var newtag=document.createElement("p");
 
 //adjecent html
 
-var target=document.getElementById("test");
-var newtag="<h2>this is heading</h2>";
+// var target=document.getElementById("test");
+// var newtag="<h2>this is heading</h2>";
 
 // target.insertAdjacentHTML ("afterend",newtag);
-target.insertAdjacentHTML ("beforeend",newtag);
+//target.insertAdjacentHTML ("beforeend",newtag);
 
 
 // text adajacent
