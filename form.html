@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event</title>
+    <script>
+        // function focus(e){
+        //    // document.getElementById("fname").style.background= " Black";
+        // e.style.bacground="red"; }
+        //    // function blur(element){
+        //    // element.style.background="" }
+           function input(e) {
+            var d=e.value ;
+            document.getElementById("test").innerHTML=d;
+            
+           }
+    </script>
+</head>
+<body>
+    <form action="">
+    <label for=""> Name</label> <input type="text" id="fname "  onfocus="focusfunction()"  oninput="inputfunction(this)"><br><br>
+    <label for=""> Class</label> <input type="text" id=" "><br><br>
+    <label for=""> coontry</label> 
+    <select name="" id="">
+        <option value="">pakistan</option>
+        <option value="">india</option>
+        <option value="">serilankah</option>
+        <option value="">china</option>
+    </select>
+    </form>
+
+    <div id="test" style="border:4px solid red"></div>
+</body>
+</html>
